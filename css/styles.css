@@ -1,0 +1,25 @@
+
+/* //////////////////////FONT: Press Start 2P ///////////////////////////////////
+[https://fonts.google.com/specimen/Press+Start+2P?query=CodeMan38#styles] 
+font-family: 'Press Start 2P', cursive;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+
+    /* Colors */
+    --normal: #212529;
+    --porimary: #209cee;
+    --succes: #92cc41;
+    --warning: #f7d51d;
+    --error: #e76e55;
+    --disabled: #d3d3d3;
+
+    /* Fonts */
+    --font: 'Press Start 2P', cursive;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--normal)
+}
