@@ -88,17 +88,9 @@ h1, h1, h3 {
     border: 4px outset var(--push);
  }
 
- .navigation__link:hover {
+ .navigation__link:hover,
+ .navigation__link--active {
     color: var(--error);
     border: 4px inset var(--disabled);
  }
 
- .navigation__link--active {
-    font-size: 2rem;
-    text-decoration: none;
-    color: var(--normal);
-    padding: 1.4rem 1.4rem 1rem 1rem;
-    color: var(--error);
-    background-color: var(--disabled);
-    border: 4px inset var(--disabled);
- }
