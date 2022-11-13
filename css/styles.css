@@ -52,14 +52,13 @@ body {
     margin: 0;
 }
 
-h1, h1, h3 {
-    text-align: center;
-}
+
 
 /* ////////////////////// HEADER /////////////////////////////////// */
 .header {
     margin: 1rem;
     padding: 1rem;
+    text-align: center;
 }
 
 .header__link {
@@ -94,3 +93,29 @@ h1, h1, h3 {
     border: 4px inset var(--disabled);
  }
 
+/* ////////////////////// MAIN /////////////////////////////////// */
+.main {
+
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+ /* ////////////////////// FOOTER /////////////////////////////////// */
+ .footer {
+    background-color: var(--push);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+ }
+
+ .footer__text {
+    font-size: 1.4rem;
+    color: var(--disabled);
+ }
+
+ .footer__text--a {
+    color: var(--warning);
+ }
