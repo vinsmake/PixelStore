@@ -18,11 +18,24 @@ font-family: 'Press Start 2P', cursive;
 
     /* Fonts */
     --font: 'Press Start 2P', cursive;
+    --1up: 0.5rem; /* 8px */
+    --2up: 1rem; /* 16px */
+    --3up: 1.5rem; /* 24px */
+    --4up: 2rem; /* 32px */
+    --5up: 2.5rem; /* 40px */
+    --6up: 3rem; /* 48px */
+    --7up: 3.5rem; /* 56px */
+    --8up: 4rem; /* 48px */
 }
 
 
 
 /* ////////////////////// GLOBALES /////////////////////////////////// */
+/* REM16px */
+html {
+    font-size: 16px;
+}
+
 .normal {
     color: var(--normal);
 }
@@ -40,10 +53,6 @@ font-family: 'Press Start 2P', cursive;
 }
 .disabled {
     color: var(--disabled)
-}
-/* REM10px */
-html {
-    font-size: 62.5%;
 }
 
 body {
@@ -63,7 +72,7 @@ body {
 
 .header__link {
     color: var(--primary);
-    font-size: 5rem;
+    font-size: var(--6up);
     color: var(--primary);
     text-decoration: none;
  }
@@ -74,15 +83,15 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 4rem;
     border: 2px ridge var(--push);
  }
 
  .navigation__link {
-    font-size: 2rem;
+    font-size: var(--2up);
     text-decoration: none;
     color: var(--normal);
-    padding: 1.4rem 1.4rem 1rem 1rem;
+    padding: 1rem 1rem 0.8rem 0.8rem;
     background-color: var(--disabled);
     border: 4px outset var(--push);
  }
@@ -100,7 +109,7 @@ body {
 }
 
 .title {
-    font-size: 4rem;
+    font-size: var(--5up);
     text-align: center;
 }
 
@@ -113,7 +122,7 @@ body {
  }
 
  .footer__text {
-    font-size: 1.4rem;
+    font-size: var(--2up);
     color: var(--disabled);
  }
 
