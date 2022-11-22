@@ -47,11 +47,30 @@ font-family: 'Press Start 2P', cursive;
     0 -4px 0 0 #e76e55,
     0 4px 0 0 #e76e55;
     
+    --margin__warning: 
+    -4px 0 0 0 #f7d51d,
+    4px 0 0 0 #f7d51d,
+    0 -4px 0 0 #f7d51d,
+    0 4px 0 0 #f7d51d;
+    
     --margin__push: 
     -4px 0 0 0 #A5A2A2,
     4px 0 0 0 #A5A2A2,
     0 -4px 0 0 #A5A2A2,
     0 4px 0 0 #A5A2A2;
+
+    --margin__normal: 
+    -4px 0 0 0 #212529,
+    4px 0 0 0 #212529,
+    0 -4px 0 0 #212529,
+    0 4px 0 0 #212529;
+
+    --margin__disabled: 
+    -4px 0 0 0 #d3d3d3,
+    4px 0 0 0 #d3d3d3,
+    0 -4px 0 0 #d3d3d3,
+    0 4px 0 0 #d3d3d3;
+
 
 }
 
@@ -131,7 +150,9 @@ body {
 
 /* ////////////////////// MAIN /////////////////////////////////// */
 
-.main {}
+.main {
+    
+}
 
 .title {
     font-size: var(--5up);
@@ -156,6 +177,10 @@ body {
 }
 
 /* ////////////////////// TIENDA /////////////////////////////////// */
+.store__grid--background {
+    background-color: var(--push);
+    padding: 1rem 0rem;
+}
 
 .store__grid {
     display: grid;
@@ -164,6 +189,8 @@ body {
     margin: auto;
     gap: 2rem;
 }
+
+
 
 @media (max-width: 920px) {
     .store__grid {
@@ -183,10 +210,24 @@ body {
     background-color: var(--disabled);
     padding: 5%;
     box-shadow: var(--margin__primary);
+    display: grid;
+    place-items: center;
 }
+
+
+.store__grid__product:hover {
+    filter: brightness(105%);
+    transform: scale(101%);
+}
+
 
 .store__grid__product--error {
     box-shadow: var(--margin__error);
+    filter: brightness(95%);
+}
+
+.store__grid__product--error:hover {
+    filter: brightness(85%);
 }
 
 .store__grid__product--link {
@@ -199,7 +240,7 @@ body {
     box-shadow: var(--margin__push);
 }
 .store__grid__product__info{
-
+    margin-top: 2rem;
 }
 
 .store__grid__product__info--title {
@@ -212,9 +253,40 @@ body {
 
 }
 
+.store__grid__product__info--grid {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    gap: 1rem;
+    margin: 0rem 1rem;
+}
+
 .store__grid__product__info--price {
+    color: var(--success);
+    font-size: var(--4up);
+    margin: 0;
+}
+
+.store__grid__product__info--price--eror {
+    color: var(--error);
+    text-decoration: line-through;
+    font-size: var(--2up);
+    margin: 0.5rem 0rem;
 
 }
+
+.store__grid__product__info--btn {
+    box-shadow: var(--margin__push);
+    border: 4px outset var(--warning);
+    background-color: var(--warning);
+    font-size: var(--2up);
+    font-family: var(--font);
+    padding: 0.5rem 0rem;
+}
+
+.store__grid__product__info--btn:hover {
+    filter: brightness(110%);
+}
+
 
 
 /* ////////////////////// RESOURCES /////////////////////////////////// */

@@ -8,6 +8,7 @@
     <title>Pixel Store</title>
 </head>
 <body>
+<!-- =============== HEADER =============== -->
     <header class="header">
         <h1> 
             <a class="header__link" href="./index.html">
@@ -16,37 +17,44 @@
             </a> 
         </h1>
     </header>
-
+<!-- =============== NAV BAR =============== -->
     <nav class="navigation"> 
         <a class="navigation__link navigation__link--active" href="./index.html">Tienda</a>
         <a class="navigation__link" href="./pages/nosotros.html">Nosotros</a>
         <a class="navigation__link" href="./pages/socios.html">Socios</a>
     </nav>
-
+<!-- =============== MAIN =============== -->
     <main class="main">
         <h2 class="title">TIENDA</h2>
-
+<!-- =============== GRID BACKGROUNDS =============== -->
+        <div class="store__grid--background">
         <section class="store__grid">
-            
+            <!-- =============== FIRST PRODUCT =============== -->
             <article class="store__grid__product">
                 <a class="store__grid__product--link" href="./pages/producto.html">
-                <img class="store__grid__product--image" src="./img/campfire.jpg" alt="campamento con fogata">
-                <div class="store__grid__product__info">
-                <h4 class="store__grid__product__info--title">Campamento con fogata</h4>
-                <p class="store__grid__product__info--description">fondo para videojuegos</p>
-                <p class="store__grid__product__info--price">$49</p>
-                </div>
+                    <img class="store__grid__product--image" src="./img/campfire.jpg" alt="campamento con fogata">
+                    <div class="store__grid__product__info">
+                        <h4 class="store__grid__product__info--title">Campamento con fogata</h4>
+                        <p class="store__grid__product__info--description">fondo para videojuegos</p>
+                        <div class="store__grid__product__info--grid">
+                            <p class="store__grid__product__info--price">$49</p>
+                            <button type="button" class="store__grid__product__info--btn">VER MAS</button>
+                        </div>
+                    </div>
                 </a>
             </article>
-
+            <!-- =============== SECOND PRODUCT =============== -->
             <article class="store__grid__product">
                 <a class="store__grid__product--link" href="./pages/producto.html">
-                <img class="store__grid__product--image" src="./img/autumn.jpg" alt="otoño">
-                <div class="store__grid__product__info">
-                <h4 class="store__grid__product__info--title">arboles en otoño</h4>
-                <p class="store__grid__product__info--description">fondo para videojuegos</p>
-                <p class="store__grid__product__info--price">$39</p>
-                </div>
+                    <img class="store__grid__product--image" src="./img/autumn.jpg" alt="otoño">
+                    <div class="store__grid__product__info">
+                        <h4 class="store__grid__product__info--title">arboles en otoño</h4>
+                        <p class="store__grid__product__info--description">fondo para videojuegos</p>
+                        <div class="store__grid__product__info--grid">
+                            <p class="store__grid__product__info--price">$39</p>
+                            <button type="button" class="store__grid__product__info--btn">VER MAS</button>
+                        </div>
+                    </div>
                 </a>
             </article>
 
@@ -56,14 +64,20 @@
                 <div class="store__grid__product__info">
                 <h4 class="store__grid__product__info--title">Ciudad lofi</h4>
                 <p class="store__grid__product__info--description">fondo para videojuegos</p>
-                <p class="store__grid__product__info--price">$59</p>
+                <div class="store__grid__product__info--grid">
+                    <p class="store__grid__product__info--price store__grid__product__info--price--eror">Vendido</p>
+                    <button type="button" class="store__grid__product__info--btn">VER MAS</button>
+                </div>
+
                 </div>
                 </a>
             </article>
             
         </section>
+        <!-- =============== END GRID BACKGROUNDS =============== -->
+    </div>
     </main>
-
+<!-- =============== FOOTER =============== -->
     <footer class="footer">
         <p class="footer__text">Todos los derechos reservados &copy; <a class="footer__text--a" href="mailto:ps.enrique.e@gmail.com">Enrique Plascencia.</a> Jalisco, México.</p>
     </footer>
