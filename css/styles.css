@@ -133,6 +133,7 @@ body {
     border: 2px ridge var(--push);
  }
 
+
  .navigation__link {
     font-size: var(--2up);
     text-decoration: none;
@@ -208,7 +209,7 @@ body {
 
 .store__grid__product {
     background-color: var(--disabled);
-    padding: 5%;
+    padding: 1rem;
     box-shadow: var(--margin__primary);
     display: grid;
     place-items: center;
@@ -247,6 +248,22 @@ body {
     width: auto;
     height: auto;
     margin: 1rem auto;
+    font-size: var(--3up);
+    color: var(--primary);
+    text-shadow: 
+    0 0 4px #FFF,
+    0 0 8px var(--primary),
+    0 0 6px #FFF;
+    filter: saturate(2);
+}
+
+.store__grid__product__info--title--error {
+    color: var(--error);
+    text-shadow: 
+    0 0 4px #FFF,
+    0 0 8px var(--error),
+    0 0 6px #FFF;
+    filter: saturate(3);
 }
 
 .store__grid__product__info--description {
