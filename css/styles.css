@@ -278,6 +278,7 @@ body {
     font-size: var(--2up);
     font-family: var(--font);
     padding: 0.5rem 0rem;
+    color: var(--normal);
 }
 
 .store__grid__product__info--btn:hover {
