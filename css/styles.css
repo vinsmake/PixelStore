@@ -313,7 +313,8 @@ body {
 
 /* ////////////////////// OFFER /////////////////////////////////// */
 .store__grid__product--offer {
-    box-shadow: var(--margin__offer);
+    box-shadow: var(--margin__offer),
+                var(--margin__warning);
     grid-area: 2 / 1 / 2 / 3;
 }
 
