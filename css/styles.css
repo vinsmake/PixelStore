@@ -186,6 +186,7 @@ body {
     padding: 1rem 0rem;
 }
 
+
 .store__grid {
     display: grid;
     grid: 1fr / 1fr 1fr 1fr;
@@ -200,6 +201,7 @@ body {
     .store__grid {
         grid: 1fr / 1fr 1fr;
         gap: 1rem;
+        width: 85%;
         }
 }
 
@@ -207,7 +209,8 @@ body {
     .store__grid {
     grid: 1fr / 1fr;
     gap: 1rem;
-    width: 85%;
+    width: 90%;
+    margin: auto;
     }
 }
 
@@ -337,6 +340,22 @@ body {
 .store__grid__product__info--price--offer {
     color: var(--warning);
     filter: brightness(70%) saturate(3);
+}
+
+.store__grid__product--offer--2 {
+    grid-area: 4 / 2 / 5 / 4;
+}
+
+@media (max-width: 920px) {
+    .store__grid__product--offer--2 {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .store__grid__product--offer--2 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
 }
 
 /* ////////////////////// RESOURCES /////////////////////////////////// */
